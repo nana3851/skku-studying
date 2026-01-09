@@ -1,0 +1,56 @@
+/* 상세 페이지 전용 */
+
+/* 카드 */
+.detail-card {
+  width: 100%;
+  max-width: 32rem;
+  background-color: #111;
+  border: 1px solid rgba(247, 196, 55, 0.3);
+  border-radius: 1rem;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+/* 이미지 */
+.detail-card img {
+  width: 12rem;
+  height: 12rem;
+  margin-bottom: 1.5rem;
+}
+
+/* 제목 */
+.detail-card h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-transform: capitalize;
+  color: rgb(247, 196, 55);
+}
+
+/* 테이블 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 1px solid rgba(247, 196, 55, 0.2);
+}
+
+th,
+td {
+  padding: 0.75rem 0;
+  font-size: 0.95rem;
+}
+
+th {
+  text-align: left;
+  color: #bbb;
+  font-weight: normal;
+  width: 40%;
+}
+
+td {
+  text-align: right;
+  font-weight: bold;
+  color: #eee;
+}

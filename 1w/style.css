@@ -1,0 +1,93 @@
+:root {
+  --text-color: #eee;
+  --text-color-light: #bbb;
+  --primary-color: rgb(247, 196, 55);
+  --bg-color: #111;
+  --border-light: 1px solid rgba(247, 196, 55, 0.3);
+  --border-dark: 1px solid rgb(247, 196, 55);
+  --max-width: 64rem;
+}
+
+/* 기본 */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+}
+
+/* nav */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  border-bottom: var(--border-dark);
+}
+
+nav h1 {
+  width: 100%;
+  max-width: var(--max-width);
+  padding: 0 1rem;
+}
+
+nav a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+/* layout */
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.pokemon-grid {
+  width: 100%;
+  max-width: var(--max-width);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+/* card */
+.pokemon-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border: var(--border-light);
+  border-radius: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.pokemon-card:hover {
+  border: var(--border-dark);
+  transform: translateY(-3px);
+}
+
+.pokemon-card img {
+  width: 4rem;
+  height: 4rem;
+}
+
+/* info */
+.info h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.2rem;
+  text-transform: capitalize;
+}
+
+.info p {
+  font-size: 0.9rem;
+  color: var(--text-color-light);
+  line-height: 1.4;
+}
+
+/* mobile */
+@media (max-width: 48rem) {
+  .pokemon-grid {
+    grid-template-columns: 1fr;
+  }
+}
